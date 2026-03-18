@@ -14,6 +14,11 @@
 
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">true</property>
+        <mapping class="com.sales.model.User"/>
+        <mapping class="com.sales.model.Product"/>
+        <mapping class="com.sales.model.Customer"/>
+        <mapping class="com.sales.model.Transaction"/>
+        <mapping class="com.sales.model.Credit"/>
 
     </session-factory>
 </hibernate-configuration>
