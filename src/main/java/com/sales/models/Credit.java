@@ -22,5 +22,52 @@ public class Credit {
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
 
-    // getters and setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Credit(Long id, Customer customer, double amount, String status, Date date) {
+        this.id = id;
+        this.customer = customer;
+        this.amount = amount;
+        this.status = status;
+        this.date = date;
+    }
+    public Credit() {}
 }

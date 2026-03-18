@@ -12,7 +12,7 @@ public class Transaction {
     private Long id;
 
     @ManyToOne
-    private com.sales.model.Product product;
+    private com.sales.models.Product product;
 
     private int quantity;
 
@@ -25,7 +25,16 @@ public class Transaction {
     private Date date;
 
     @ManyToOne
-    private com.sales.model.Customer customer;
+    private com.sales.models.Customer customer;
 
-    // getters and setters
+    public Transaction(Long id, Product product, int quantity, double totalPrice, TransactionType type, Date date, Customer customer) {
+        this.id = id;
+        this.product = product;
+        this.quantity = quantity;
+        this.totalPrice = totalPrice;
+        this.type = type;
+        this.date = date;
+        this.customer = customer;
+    }
+    public Transaction() {}
 }
