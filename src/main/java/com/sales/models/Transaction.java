@@ -1,4 +1,4 @@
-package com.sales.model;
+package com.sales.models;
 
 import jakarta.persistence.*;
 import java.util.Date;
@@ -12,7 +12,7 @@ public class Transaction {
     private Long id;
 
     @ManyToOne
-    private Product product;
+    private com.sales.model.Product product;
 
     private int quantity;
 
@@ -25,7 +25,7 @@ public class Transaction {
     private Date date;
 
     @ManyToOne
-    private Customer customer;
+    private com.sales.model.Customer customer;
 
     // getters and setters
 }
